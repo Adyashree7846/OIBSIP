@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="converter-box">
+        <h2>Temperature Converter</h2>
+        
+        <!-- Input Group -->
+        <div class="input-group">
+            <label for="tempInput">Degrees</label>
+            <input type="text" id="tempInput" placeholder="Enter value...">
+        </div>
+
+        <!-- Dropdowns -->
+        <div class="input-group">
+            <label for="inputUnit">Type</label>
+            <select id="inputUnit">
+                <option value="C">Celsius (°C)</option>
+                <option value="F">Fahrenheit (°F)</option>
+                <option value="K">Kelvin (K)</option>
+            </select>
+        </div>
+
+        <button id="convertBtn">Convert</button>
+
+        <!-- Dynamic Error / Result Fields -->
+        <div id="errorMessage" class="error-box hidden"></div>
+        
+        <div id="resultsArea" class="results-box hidden">
+            <h3>Converted Balances:</h3>
+            <p id="res1"></p>
+            <p id="res2"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
